@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+// Componentes
+import Nav from './components/Nav/Nav.jsx';
+// import Popup from './components/Popup/Popup.jsx';
+
+// Router
+import { BrowserRouter as Router } from 'react-router-dom';
+
+// Animaciones
+
+const App = () => {
+  // const [popup, setpopup] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {/* Menu */}
+      <Nav />
+
+      {/* {popup ? <Popup popup={setpopup}/> : null} */}
+      {/* Popup */}
+    </Router>
   );
-}
+};
 
 export default App;
