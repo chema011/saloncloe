@@ -2,14 +2,18 @@ import styled from 'styled-components';
 
 export const Nav = styled.div`
   background-color: ${(props) => props.theme.darkBlue};
-  height: 80px;
+  position: fixed;
+  width: 100%;
 `;
 
 export const Flex = styled.div`
-  border: 1px solid red;
   height: 100%;
+  padding: 10px 0;
   display: flex;
   align-items: center;
+  box-shadow: -1px -1px 79px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px -1px 79px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -1px 79px 0px rgba(0, 0, 0, 0.75);
 `;
 
 export const Box = styled.ul`

@@ -25,9 +25,9 @@ export const Flex = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: ${props => props.theme.darkBlue};
+  background: ${(props) => props.theme.darkBlue};
   padding: 20px;
-  color: ${props => props.theme.white};
+  color: ${(props) => props.theme.white};
 
   & p {
     font-size: 18px;

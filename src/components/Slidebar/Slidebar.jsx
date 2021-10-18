@@ -29,8 +29,8 @@ export default function Slidebar() {
         </Link>
 
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-          <ul className="nav-menu-items" onClick={showSidebar}>
-            <li className="navbar-toggle">
+          <ul className="nav-menu-items">
+            <li className="navbar-toggle" onClick={showSidebar}>
               <Link to="#" className="menu-bars">
                 <AiIcons.AiOutlineClose />
               </Link>
