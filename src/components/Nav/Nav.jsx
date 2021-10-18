@@ -41,6 +41,23 @@ const Menu = () => {
         </Styled.Flex>
         {/* Padre */}
       </Styled.Nav>
+
+      <Styled.BoxMedia>
+        <IconContext.Provider value={{ color: '#FFF' }}>
+          {NavData.map((item, index) => (
+            <li key={index}>
+              <Styled.Link
+                href={item.link}
+                target={item.newTab && '_blank'}
+                // onClick={() => props.popup(item.valor)}
+              >
+                {item.icon}
+                {item.contenido}
+              </Styled.Link>
+            </li>
+          ))}
+        </IconContext.Provider>
+      </Styled.BoxMedia>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../helper/Responsive/Responsive';
 
 export const Nav = styled.div`
   background-color: ${(props) => props.theme.darkBlue};
@@ -17,17 +18,38 @@ export const Flex = styled.div`
 `;
 
 export const Box = styled.ul`
+  display: none;
+  width: 100%;
+
+  @media ${device.tablet} {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+`;
+
+export const BoxMedia = styled.ul`
   display: flex;
-  margin-left: 50px;
   list-style: none;
   justify-content: space-around;
   width: 100%;
+  position: fixed;
+  background-color: ${(props) => props.theme.darkBlue};
+  padding: 30px 0;
+  bottom: 0;
+
+  & li:first-child {
+    display: none;
+  }
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 
 export const Link = styled.a`
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 11px;
   text-decoration: none;
   text-transform: capitalize;
   cursor: pointer;
@@ -35,5 +57,13 @@ export const Link = styled.a`
 
   & svg {
     margin-right: 10px;
+  }
+
+  @media ${device.tablet} {
+    font-size: 14px;
+  }
+
+  @media ${device.laptop} {
+    font-size: 20px;
   }
 `;
