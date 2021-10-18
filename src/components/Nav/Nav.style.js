@@ -35,7 +35,7 @@ export const BoxMedia = styled.ul`
   width: 100%;
   position: fixed;
   background-color: ${(props) => props.theme.darkBlue};
-  padding: 30px 0;
+  padding: 10px 0;
   bottom: 0;
 
   & li:first-child {
@@ -49,18 +49,19 @@ export const BoxMedia = styled.ul`
 export const Link = styled.a`
   display: flex;
   align-items: center;
-  font-size: 11px;
+  flex-direction: column;
   text-decoration: none;
   text-transform: capitalize;
   cursor: pointer;
   color: ${(props) => props.theme.white};
-
-  & svg {
-    margin-right: 10px;
-  }
+  font-size: 11px;
+  gap: 5px;
 
   @media ${device.tablet} {
     font-size: 14px;
+    align-items: center;
+    flex-direction: row;
+
   }
 
   @media ${device.laptop} {

@@ -16,7 +16,7 @@ export const NavData = [
   {
     icon: <BsIcon.BsFillTelephoneFill />,
     contenido: 'llamar ahora',
-    link: '#',
+    link: 'tel:+50499321468',
   },
   {
     icon: <FaIcon.FaDirections />,
