@@ -38,6 +38,10 @@ export const BoxMedia = styled.ul`
   padding: 10px 0;
   bottom: 0;
 
+  & .button {
+    font-size: 5px!important;
+  }
+
   & li:first-child {
     display: none;
   }
@@ -57,11 +61,12 @@ export const Link = styled.a`
   font-size: 11px;
   gap: 5px;
 
+ 
+
   @media ${device.tablet} {
     font-size: 14px;
     align-items: center;
     flex-direction: row;
-
   }
 
   @media ${device.laptop} {

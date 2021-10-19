@@ -8,15 +8,14 @@ export const NavData = [
     link: '#home',
   },
   {
-    icon: <FaIcon.FaWpforms />,
-    contenido: 'obtener presupuesto',
+    contenido: 'Redes Sociales',
     link: '#',
     valor: true,
   },
   {
     icon: <BsIcon.BsFillTelephoneFill />,
     contenido: 'llamar ahora',
-    link: 'tel:+50499321468',
+    link: 'tel:+34662419031',
   },
   {
     icon: <FaIcon.FaDirections />,

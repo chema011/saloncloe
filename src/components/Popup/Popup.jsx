@@ -8,7 +8,7 @@ import * as Styled from './Popup.style';
 import * as AiIcon from 'react-icons/ai';
 
 // Componentes
-import Form from '../Form/Form';
+import RedesSociales from '../RedesSociales/RedesSociales';
 
 const Popup = (props) => {
   return (
@@ -16,10 +16,10 @@ const Popup = (props) => {
       <Fade top>
         <Styled.ModalContent>
           <Styled.Flex>
-            <p>Formulario</p>
+            <p>Nuestras Redes Sociales</p>
             <AiIcon.AiFillCloseCircle onClick={() => props.popup(false)} />
           </Styled.Flex>
-          <Form />
+          <RedesSociales/>
         </Styled.ModalContent>
       </Fade>
     </Styled.Modal>
