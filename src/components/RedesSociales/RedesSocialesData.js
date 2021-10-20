@@ -1,4 +1,5 @@
 import * as AiIcons from 'react-icons/ai';
+import * as SiIcons from 'react-icons/si';
 
 export const RedesSocialesDatos = [
   {
@@ -9,6 +10,7 @@ export const RedesSocialesDatos = [
     icon: <AiIcons.AiFillFacebook />,
   },
   {
-    icon: <AiIcons.AiFillTwitterCircle />,
+    icon: <SiIcons.SiGmail />,
+    link: "mailto:salondefiestascloe@gmail.com"
   },
 ];

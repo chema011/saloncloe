@@ -22,7 +22,7 @@ export default function Slidebar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#FFF' }}>
+      <IconContext.Provider value={{ color: 'pink' }}>
         {/* All the icons now are white */}
         <Link to="#" className="menu-bars">
           <FaIcons.FaBars onClick={showSidebar} />

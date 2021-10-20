@@ -7,12 +7,6 @@ export const NavData = [
     link: '#home',
   },
   {
-    icon: <BsIcon.BsFacebook />,
-    contenido: 'Redes Sociales',
-    link: '#',
-    valor: true,
-  },
-  {
     icon: <BsIcon.BsFillTelephoneFill />,
     contenido: 'llamar ahora',
     link: 'tel:+34662419031',

@@ -10,6 +10,7 @@ import { NavData } from './NavData.js';
 
 //Componentes
 import Slidebar from '../Slidebar/Slidebar';
+import RedesSociales from '../RedesSociales/RedesSociales';
 
 const Menu = (props) => {
   return (
@@ -34,6 +35,7 @@ const Menu = (props) => {
                   </Styled.Link>
                 </li>
               ))}
+              <RedesSociales />
             </IconContext.Provider>
           </Styled.Box>
           {/*  */}
@@ -63,7 +65,10 @@ const Menu = (props) => {
 };
 
 const Nav = (props) => {
-  return ReactDOM.createPortal(<Menu popup={props.popup}/>, document.getElementById('root-menu'));
+  return ReactDOM.createPortal(
+    <Menu popup={props.popup} />,
+    document.getElementById('root-menu')
+  );
 };
 
 export default Nav;

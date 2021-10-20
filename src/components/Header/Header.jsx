@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../../utility/Button/Buttons';
 
 ///Estilos
 import * as Styled from './Header.style';
@@ -16,9 +15,6 @@ const Header = (props) => {
             {item.contenido}
           </p>
         ))}
-        <Button onClick={() => props.popup(true)}>
-          Nuestras Redes Sociales
-        </Button>
       </Styled.BoxContent>
       <Styled.BoxImg>
         <iframe

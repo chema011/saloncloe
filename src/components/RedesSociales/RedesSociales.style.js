@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 
+
 export const Box = Styled.div`
- height: 100px; 
  display: flex;
  justify-content: center;
  align-items: center;
@@ -9,8 +9,8 @@ export const Box = Styled.div`
 `;
 
 export const Link = Styled.a`
-font-size: 50px;
-color: ${(props) => props.theme.darkBlue};
+font-size: 30px;
+color: ${(props) => props.theme.primary};
 
 &:hover {
 transform: scale(1.1);

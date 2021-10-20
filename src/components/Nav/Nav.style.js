@@ -24,6 +24,7 @@ export const Box = styled.ul`
   @media ${device.tablet} {
     display: flex;
     list-style: none;
+    align-items: center;
     justify-content: space-around;
   }
 `;
@@ -36,7 +37,6 @@ export const BoxMedia = styled.ul`
   position: fixed;
   z-index: 1000;
   background-color: ${(props) => props.theme.primary};
-  padding: 10px 0;
   bottom: 0;
 
   & .button {
