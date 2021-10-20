@@ -38,6 +38,7 @@ export const BoxMedia = styled.ul`
   z-index: 1000;
   background-color: ${(props) => props.theme.primary};
   bottom: 0;
+  padding: 10px 0;
 
   & .button {
     font-size: 5px !important;
