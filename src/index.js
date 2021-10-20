@@ -9,6 +9,9 @@ import { ThemeProvider } from 'styled-components';
 import App from './App';
 import * as theme from './config/theme';
 
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     <App />

@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // Estilos
 import './css/app.css';
 import Header from './components/Header/Header.jsx';
+import SliderImg from './components/Slider/SliderImg.jsx';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         {/* Header */}
         <Header />
 
-        {/* Popup */}
+        <SliderImg />
       </Router>
     </div>
   );

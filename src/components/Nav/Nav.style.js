@@ -4,6 +4,7 @@ import { device } from '../../helper/Responsive/Responsive';
 export const Nav = styled.div`
   background-color: ${(props) => props.theme.primary};
   position: fixed;
+  z-index: 10;
   width: 100%;
 `;
 

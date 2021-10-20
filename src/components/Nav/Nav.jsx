@@ -28,7 +28,6 @@ const Menu = (props) => {
                   <Styled.Link
                     href={item.link}
                     target={item.newTab && '_blank'}
-                    onClick={() => props.popup(item.valor)}
                   >
                     {item.icon}
                     {item.contenido}
@@ -45,13 +44,12 @@ const Menu = (props) => {
       </Styled.Nav>
 
       <Styled.BoxMedia>
-        <IconContext.Provider value={{ color: '#FFF' }}>
+        <IconContext.Provider value={{ color: 'pink' }}>
           {NavData.map((item, index) => (
             <li key={index}>
               <Styled.Link
                 href={item.link}
                 target={item.newTab && '_blank'}
-                onClick={() => props.popup(item.valor)}
               >
                 {item.icon}
                 {item.contenido}
