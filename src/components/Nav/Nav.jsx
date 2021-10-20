@@ -21,7 +21,7 @@ const Menu = (props) => {
           <Slidebar />
           {/*  */}
           <Styled.Box>
-            <IconContext.Provider value={{ color: '#FFF' }}>
+            <IconContext.Provider value={{ color: 'pink' }}>
               {NavData.map((item, index) => (
                 <li key={index}>
                   <Styled.Link

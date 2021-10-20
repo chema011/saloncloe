@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { device } from '../../helper/Responsive/Responsive';
 
 const Button = styled.a`
-  background: ${(props) => props.theme.darkBlue};
-  color: ${(props) => props.theme.white};
+  background: ${(props) => props.theme.primary};
+  color: ${(props) => props.theme.secondary};
   transition: all 1s;
   display: inline-block;
   padding: 10px;
@@ -20,7 +20,6 @@ const Button = styled.a`
 
     &:hover::after {
       transform: scale(1.4);
-      background: ${(props) => props.theme.darkBlue};
       opacity: 0;
     }
 
@@ -29,7 +28,7 @@ const Button = styled.a`
       display: inline-block;
       width: 100%;
       height: 100%;
-      background: ${(props) => props.theme.darkBlue};
+      background: ${(props) => props.theme.primary};
       position: absolute;
       top: 0;
       border-radius: 5px;

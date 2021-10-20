@@ -7,7 +7,7 @@ export const Box = styled.div`
 
 export const BoxContent = styled.div`
   text-align: center;
-  color: ${(props) => props.theme.darkBlue};
+  color: ${(props) => props.theme.primary};
 
   & .titulo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
@@ -31,6 +31,9 @@ export const BoxContent = styled.div`
 export const BoxImg = styled.div`
   margin-top: 30px;
   width: 100%;
-  height: 300px;
-  background-color: black;
+  height: 500px;
+
+  & iframe {
+    border: none;
+  }
 `;

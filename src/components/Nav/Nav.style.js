@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../helper/Responsive/Responsive';
 
 export const Nav = styled.div`
-  background-color: ${(props) => props.theme.darkBlue};
+  background-color: ${(props) => props.theme.primary};
   position: fixed;
   width: 100%;
 `;
@@ -35,7 +35,7 @@ export const BoxMedia = styled.ul`
   width: 100%;
   position: fixed;
   z-index: 1000;
-  background-color: ${(props) => props.theme.darkBlue};
+  background-color: ${(props) => props.theme.primary};
   padding: 10px 0;
   bottom: 0;
 
@@ -58,7 +58,7 @@ export const Link = styled.a`
   text-decoration: none;
   text-transform: capitalize;
   cursor: pointer;
-  color: ${(props) => props.theme.white};
+  color: ${(props) => props.theme.secondary};
   font-size: 11px;
   gap: 5px;
 

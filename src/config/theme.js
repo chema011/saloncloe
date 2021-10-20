@@ -3,7 +3,7 @@ export const Green = 'green';
 export const darkGreen = 'green';
 
 /// Familia del Color Blanco
-export const white = 'white';
+export const secondary = "pink";
 
 //Familia del Color Azul
-export const darkBlue = '#060b26';
+export const primary = '#15467e';
