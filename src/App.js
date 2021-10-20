@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 // Componentes
 import Nav from './components/Nav/Nav.jsx';
 
