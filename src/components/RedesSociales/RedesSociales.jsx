@@ -10,7 +10,9 @@ const RedesSociales = () => {
   return (
     <Styled.Box>
       {RedesSocialesDatos.map((item, idx) => (
-        <>{item.icon}</>
+        <Styled.Link href={item.link && item.link} target="_blank" key={idx}>
+          {item.icon}
+        </Styled.Link>
       ))}
     </Styled.Box>
   );

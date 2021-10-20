@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 //Estilos
 import * as Styled from './Nav.style.js';
@@ -10,7 +11,7 @@ import { NavData } from './NavData.js';
 //Componentes
 import Slidebar from '../Slidebar/Slidebar';
 
-const Nav = (props) => {
+const Menu = (props) => {
   return (
     <>
       <Styled.Nav>
@@ -48,7 +49,7 @@ const Nav = (props) => {
               <Styled.Link
                 href={item.link}
                 target={item.newTab && '_blank'}
-                onClick={() => console.log("clicked")}
+                onClick={() => props.popup(item.valor)}
               >
                 {item.icon}
                 {item.contenido}
@@ -59,6 +60,10 @@ const Nav = (props) => {
       </Styled.BoxMedia>
     </>
   );
+};
+
+const Nav = (props) => {
+  return ReactDOM.createPortal(<Menu popup={props.popup}/>, document.getElementById('root-menu'));
 };
 
 export default Nav;

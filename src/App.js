@@ -14,18 +14,19 @@ import Header from './components/Header/Header.jsx';
 const App = () => {
   const [popup, setpopup] = useState('');
   return (
+    <div className="container">
       <Router>
         {/* Menu */}
-        <Nav popup={setpopup}/>
-        {popup ? <Popup popup={setpopup}/> : null}
+        <Nav popup={setpopup} />
 
-        <div className="container">
+        {popup && <Popup popup={setpopup} />}
+
         {/* Header */}
-        <Header />
+        <Header popup={setpopup} />
 
         {/* Popup */}
-        </div>
       </Router>
+    </div>
   );
 };
 

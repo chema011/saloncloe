@@ -34,12 +34,13 @@ export const BoxMedia = styled.ul`
   justify-content: space-around;
   width: 100%;
   position: fixed;
+  z-index: 1000;
   background-color: ${(props) => props.theme.darkBlue};
   padding: 10px 0;
   bottom: 0;
 
   & .button {
-    font-size: 5px!important;
+    font-size: 5px !important;
   }
 
   & li:first-child {
@@ -60,8 +61,6 @@ export const Link = styled.a`
   color: ${(props) => props.theme.white};
   font-size: 11px;
   gap: 5px;
-
- 
 
   @media ${device.tablet} {
     font-size: 14px;

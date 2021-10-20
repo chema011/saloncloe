@@ -1,6 +1,5 @@
 import * as FaIcon from 'react-icons/fa';
 import * as BsIcon from 'react-icons/bs';
-
 export const NavData = [
   {
     icon: '',
@@ -8,6 +7,7 @@ export const NavData = [
     link: '#home',
   },
   {
+    icon: <BsIcon.BsFacebook />,
     contenido: 'Redes Sociales',
     link: '#',
     valor: true,

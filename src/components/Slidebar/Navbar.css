@@ -7,9 +7,11 @@
   font-size: 2rem;
   background: none;
   display: inline;
+  
 }
 
 .nav-menu {
+  
   background-color: var(--navBg);
   width: 250px;
   height: 100vh;

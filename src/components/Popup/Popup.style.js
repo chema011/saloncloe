@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../helper/Responsive/Responsive';
 
 export const Modal = styled.div`
   position: fixed; /* Stay in place */
@@ -15,10 +16,10 @@ export const Modal = styled.div`
 export const ModalContent = styled.div`
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-  border-radius: 30px;
   overflow: hidden;
+  width: 100%;
+
+  @media ${device.tablet}{width: 700px;}
 `;
 
 export const Flex = styled.div`
