@@ -1,7 +1,14 @@
 import styled from 'styled-components';
+import { device } from '../../helper/Responsive/Responsive';
 
 export const Container = styled.div`
-  margin-top: 30px;
+  margin-top: 100px;
+  max-width: 1200px;
+  overflow: hidden;
+
+  @media ${device.laptop} {
+    overflow: initial;
+  }
 
   .slick-slider {
     z-index: 1;
@@ -17,6 +24,16 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.img`
-  height: 500px;
-  width: 300px !important;
+  width: 100% !important;
+  height: 400px;
+
+  @media ${device.mobileL} {
+    height: 500px;
+    width: 300px !important;
+    margin: 0 70px;
+  }
+
+  @media ${device.tablet} {
+    margin: 0 50px;
+  }
 `;

@@ -5,20 +5,10 @@ import Slider from 'react-slick';
 import * as Styled from './SliderImg.Style';
 
 //Datos
-import { SliderImgData } from './SliderImgData';
+import { SliderImgData, settings } from './SliderImgData';
 
 const SliderImg = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-    centerMode: true,
-  };
+  
   return (
     <Styled.Container id="galeria">
       <Slider {...settings}>
