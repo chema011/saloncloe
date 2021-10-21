@@ -21,14 +21,14 @@ export const settings = {
   autoplaySpeed: 3000,
   responsive: [
     {
-      breakpoint: 1000,
+      breakpoint: 700,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 700,
+      breakpoint: 400,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

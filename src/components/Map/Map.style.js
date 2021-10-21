@@ -1,0 +1,24 @@
+import styled from 'styled-components';
+
+export const Box = styled.div`
+  margin-top: 150px;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+
+  &:hover& h2 {
+    padding: 0 50px;
+  }
+
+  & h2 {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: ${(props) => props.theme.primary};
+    border-bottom: 1px solid ${(props) => props.theme.primary};
+    transition: all 1s ease-in;
+  }
+
+  & iframe {
+    border: none;
+  }
+`;

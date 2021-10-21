@@ -14,10 +14,15 @@ export const BoxContent = styled.div`
       sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 30px;
+    text-shadow: 2px 2px 10px pink;
 
     @media ${device.laptop} {
       font-size: 80px;
+    }
+
+    & span {
+      margin-left: 0;
     }
   }
 
@@ -25,15 +30,9 @@ export const BoxContent = styled.div`
     margin-top: 15px;
     margin-bottom: 25px;
     font-size: 30px;
-  }
-`;
 
-export const BoxImg = styled.div`
-  margin-top: 30px;
-  width: 100%;
-  height: 500px;
-
-  & iframe {
-    border: none;
+    & span {
+      margin-left: 0;
+    }
   }
 `;

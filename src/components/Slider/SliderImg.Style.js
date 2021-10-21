@@ -2,12 +2,21 @@ import styled from 'styled-components';
 import { device } from '../../helper/Responsive/Responsive';
 
 export const Container = styled.div`
-  margin-top: 100px;
+  margin: 50px auto;
   max-width: 1200px;
   overflow: hidden;
+  text-align: center;
 
-  @media ${device.laptop} {
-    overflow: initial;
+  &:hover& h2 {
+    padding: 0 50px;
+  }
+
+  & h2 {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: ${(props) => props.theme.primary};
+    border-bottom: 1px solid ${(props) => props.theme.primary};
+    transition: all 1s ease-in;
   }
 
   .slick-slider {
@@ -21,19 +30,29 @@ export const Container = styled.div`
   .slick-next::before {
     color: ${(props) => props.theme.primary};
   }
+
+  @media ${device.laptop} {
+    overflow: initial;
+  }
 `;
 
 export const Img = styled.img`
   width: 100% !important;
-  height: 400px;
+  height: 100vh;
 
   @media ${device.mobileL} {
-    height: 500px;
-    width: 300px !important;
-    margin: 0 70px;
+    height: 100vh;
+    width: 200px !important;
   }
 
   @media ${device.tablet} {
     margin: 0 50px;
+    height: 100vh;
+  }
+
+  @media ${device.tablet} {
+    margin: 0 50px;
+    height: 700px;
+    width: 300px !important;
   }
 `;

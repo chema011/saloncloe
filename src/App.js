@@ -8,6 +8,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './css/app.css';
 import Header from './components/Header/Header.jsx';
 import SliderImg from './components/Slider/SliderImg.jsx';
+import Map from './components/Map/Map.jsx';
 
 const App = () => {
   return (
@@ -20,6 +21,9 @@ const App = () => {
         <Header />
 
         <SliderImg />
+
+        {/* Mapa */}
+        <Map />
       </Router>
     </div>
   );
