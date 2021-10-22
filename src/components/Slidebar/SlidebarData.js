@@ -20,10 +20,4 @@ export const SidebarData = [
     icon: <BsIcons.BsMapFill />,
     cName: 'nav-text',
   },
-  {
-    title: 'Contacto',
-    path: '#contacto',
-    icon: <AiIcons.AiFillPhone />,
-    cName: 'nav-text',
-  },
 ];

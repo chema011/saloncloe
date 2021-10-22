@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../helper/Responsive/Responsive';
 
 export const Box = styled.div`
-  margin: 100px 0 150px 0;
+  margin-top: 140px;
   width: 100%;
   height: 300px;
   text-align: center;
