@@ -36,23 +36,41 @@ export const Container = styled.div`
   }
 `;
 
+export const Box = styled.div`
+  padding: 0 50px;
+
+  .slick-center {
+    @media ${device.tablet} {
+      transform: scale(1.1);
+      transition: all 1s ease-in-out;
+    }
+  }
+`;
+
 export const Img = styled.img`
   width: 100% !important;
-  height: 100vh;
+  height: 300px;
+  transform: scale(0.9);
+  transition: all 1s ease-in-out;
 
   @media ${device.mobileL} {
-    height: 100vh;
-    width: 200px !important;
+    height: 400px;
   }
 
   @media ${device.tablet} {
-    margin: 0 50px;
-    height: 100vh;
+    height: 300px;
   }
 
-  @media ${device.tablet} {
-    margin: 0 50px;
-    height: 700px;
+  @media ${device.laptop} {
+    height: 500px;
     width: 300px !important;
+  }
+
+  img {
+    margin: 0 !important;
+  }
+
+  .center {
+    transform: scale(1.1);
   }
 `;

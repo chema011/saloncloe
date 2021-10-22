@@ -25,14 +25,4 @@ export const BoxContent = styled.div`
       margin-left: 0;
     }
   }
-
-  & .sometext {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    font-size: 30px;
-
-    & span {
-      margin-left: 0;
-    }
-  }
 `;

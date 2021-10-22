@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { device } from '../../helper/Responsive/Responsive';
 
 export const Box = styled.div`
-  margin-top: 150px;
+  margin: 100px 0 150px 0;
   width: 100%;
-  height: 500px;
+  height: 300px;
   text-align: center;
 
   &:hover& h2 {
@@ -20,5 +21,9 @@ export const Box = styled.div`
 
   & iframe {
     border: none;
+  }
+
+  @media ${device.tablet} {
+    height: 500px;
   }
 `;

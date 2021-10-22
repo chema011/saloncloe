@@ -19,19 +19,24 @@ export const settings = {
   initialSlide: 0,
   autoplay: true,
   autoplaySpeed: 3000,
+  className: 'center',
+  centerMode: true,
+  centerPadding: '60px',
+
   responsive: [
     {
-      breakpoint: 700,
+      breakpoint: 800,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 400,
+      breakpoint: 500,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: false,
       },
     },
   ],
