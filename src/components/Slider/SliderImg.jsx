@@ -14,9 +14,7 @@ const SliderImg = () => {
       <Styled.Box>
         <Slider {...settings}>
           {SliderImgData.map((item, idx) => (
-            <div>
-              <Styled.Img key={idx} src={item.src} />
-            </div>
+            <Styled.Img key={idx} src={item.src} />
           ))}
         </Slider>
       </Styled.Box>

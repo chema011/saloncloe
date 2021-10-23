@@ -52,13 +52,15 @@ export const Img = styled.img`
   height: 300px;
   transform: scale(0.9);
   transition: all 1s ease-in-out;
+  object-fit: cover;
 
   @media ${device.mobileL} {
     height: 400px;
   }
 
   @media ${device.tablet} {
-    height: 300px;
+    height: 500px;
+    /* width: 300px !important; */
   }
 
   @media ${device.laptop} {

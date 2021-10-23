@@ -20,8 +20,6 @@ export const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
   className: 'center',
-  centerMode: true,
-  centerPadding: '60px',
 
   responsive: [
     {

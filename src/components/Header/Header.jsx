@@ -14,10 +14,8 @@ const Header = () => {
     <Styled.Box id="casa">
       <Styled.BoxContent>
         {HeaderData.map((item, idx) => (
-          <Bounce left cascade >
-            <p key={idx} className={item.class}>
-              {item.contenido}
-            </p>
+          <Bounce left cascade key={idx}>
+            <p className={item.class}>{item.contenido}</p>
           </Bounce>
         ))}
       </Styled.BoxContent>
