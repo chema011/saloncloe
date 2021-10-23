@@ -21,6 +21,9 @@ export const Box = styled.div`
 
   & iframe {
     border: none;
+    outline: 3px solid ${(props) => props.theme.secondary};
+    padding: 20px;
+    border-radius: 10px ;
   }
 
   @media ${device.tablet} {

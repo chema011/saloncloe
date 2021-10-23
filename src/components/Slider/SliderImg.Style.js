@@ -53,6 +53,9 @@ export const Img = styled.img`
   transform: scale(0.9);
   transition: all 1s ease-in-out;
   object-fit: cover;
+  outline: 3px solid ${(props) => props.theme.secondary};
+  padding: 20px;
+  border-radius: 5px;
 
   @media ${device.mobileL} {
     height: 400px;

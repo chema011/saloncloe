@@ -13,9 +13,6 @@ export const Flex = styled.div`
   padding: 10px 0;
   display: flex;
   align-items: center;
-  box-shadow: -1px -1px 79px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px -1px 79px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px -1px 79px 0px rgba(0, 0, 0, 0.75);
 `;
 
 export const Box = styled.ul`
