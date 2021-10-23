@@ -4,7 +4,6 @@ import { device } from '../../helper/Responsive/Responsive';
 export const Container = styled.div`
   margin: 50px auto;
   max-width: 1200px;
-  overflow: hidden;
   text-align: center;
 
   &:hover& h2 {
@@ -18,32 +17,19 @@ export const Container = styled.div`
     border-bottom: 1px solid ${(props) => props.theme.primary};
     transition: all 1s ease-in;
   }
-
-  .slick-slider {
-    z-index: 1;
-  }
-
-  .slick-prev::before {
-    color: ${(props) => props.theme.primary};
-  }
-
-  .slick-next::before {
-    color: ${(props) => props.theme.primary};
-  }
-
-  @media ${device.laptop} {
-    overflow: initial;
-  }
 `;
 
 export const Box = styled.div`
   padding: 0 50px;
 
-  .slick-center {
-    @media ${device.tablet} {
-      transform: scale(1.1);
-      transition: all 1s ease-in-out;
-    }
+  .slick-slider {
+    z-index: 1;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    color: ${(props) => props.theme.primary};
+    font-size: 30px;
   }
 `;
 
