@@ -9,7 +9,11 @@ export const BoxContent = styled.div`
   text-align: center;
   color: ${(props) => props.theme.primary};
 
-  & .titulo {
+  .Logo {
+    height: 200px;
+  }
+
+  .titulo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
       sans-serif;
     text-transform: uppercase;

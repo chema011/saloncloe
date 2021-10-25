@@ -28,8 +28,8 @@ const Menu = (props) => {
             <Styled.Box>
               <IconContext.Provider value={{ color: 'pink' }}>
                 {NavData.map((item, index) => (
-                  <Fade bottom delay={item.time}>
-                    <li key={index}>
+                  <Fade key={index} bottom delay={item.time}>
+                    <li>
                       <Styled.Link
                         href={item.link}
                         target={item.newTab && '_blank'}
@@ -68,11 +68,8 @@ const Menu = (props) => {
   );
 };
 
-const Nav = (props) => {
-  return ReactDOM.createPortal(
-    <Menu popup={props.popup} />,
-    document.getElementById('root-menu')
-  );
+const Nav = () => {
+  return ReactDOM.createPortal(<Menu />, document.getElementById('root-menu'));
 };
 
 export default Nav;

@@ -10,6 +10,8 @@ export const SliderImgData = [
   { src: Img4 },
 ];
 
+export const Titulo = 'Galería';
+
 export const settings = {
   dots: true,
   infinite: true,

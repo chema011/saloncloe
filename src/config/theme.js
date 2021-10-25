@@ -1,8 +1,4 @@
-/// Familia del Color Verde
-export const Green = 'green';
-export const darkGreen = 'green';
-
-/// Familia del Color Blanco
+/// Familia del Color Rosado
 export const secondary = "pink";
 
 //Familia del Color Azul

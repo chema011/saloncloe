@@ -5,6 +5,7 @@ import * as Styled from './Header.style';
 
 //Animaciones
 import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
 
 //Datos
 import { HeaderData } from './HeaderData';
@@ -14,9 +15,18 @@ const Header = () => {
     <Styled.Box id="casa">
       <Styled.BoxContent>
         {HeaderData.map((item, idx) => (
-          <Bounce left cascade key={idx}>
-            <p className={item.class}>{item.contenido}</p>
-          </Bounce>
+          <React.Fragment key={idx}>
+            {item.contenido && (
+              <Bounce left cascade>
+                <p className={item.class}>{item.contenido}</p>
+              </Bounce>
+            )}
+            {item.img && (
+              <Fade top delay={1000}>
+                <img className={item.class} src={item.img} alt={item.alt} />
+              </Fade>
+            )}
+          </React.Fragment>
         ))}
       </Styled.BoxContent>
     </Styled.Box>

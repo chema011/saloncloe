@@ -5,12 +5,12 @@ import Slider from 'react-slick';
 import * as Styled from './SliderImg.Style';
 
 //Datos
-import { SliderImgData, settings } from './SliderImgData';
+import { SliderImgData, settings, Titulo } from './SliderImgData';
 
 const SliderImg = () => {
   return (
     <Styled.Container id="galeria">
-      <h2>Galeria</h2>
+      <h2>{Titulo}</h2>
       <Styled.Box>
         <Slider {...settings}>
           {SliderImgData.map((item, idx) => (
