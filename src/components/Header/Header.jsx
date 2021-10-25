@@ -17,9 +17,18 @@ const Header = () => {
         {HeaderData.map((item, idx) => (
           <React.Fragment key={idx}>
             {item.contenido && (
-              <Bounce left cascade>
-                <p className={item.class}>{item.contenido}</p>
-              </Bounce>
+              <>
+                <div className="bounce">
+                  <Bounce left cascade>
+                    <p className={item.class}>{item.contenido}</p>
+                  </Bounce>
+                </div>
+                <div className="bounce">
+                  <Bounce left>
+                    <p className={item.class}>{item.contenido}</p>
+                  </Bounce>
+                </div>
+              </>
             )}
             {item.img && (
               <Fade top delay={1000}>
