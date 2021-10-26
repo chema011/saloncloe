@@ -10,7 +10,7 @@ export const NavData = [
   {
     icon: <BsIcon.BsFillTelephoneFill />,
     contenido: 'llamar ahora',
-    link: 'tel:+34662419031',
+    link: 'tel:623453790',
     time: 2000,
   },
   {
