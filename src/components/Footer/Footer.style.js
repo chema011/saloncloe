@@ -13,7 +13,7 @@ display:flex;
 flex-direction: column;
 align-items: center;
 justify-content:center;
-gap: 10px;
+gap: 30px;
 padding: 30px 5px 50px 5px;
 
 img {
@@ -24,14 +24,18 @@ img {
 p {
   color: ${(props) => props.theme.secondary};
   text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'Festive', cursive;
 }
 
 svg {
   color: ${(props) => props.theme.secondary};
+  font-size: 30px;
 }
 
 @media ${device.tablet} {
-align-items: center;
+  align-items: center;
 justify-content:center;
 flex-direction: row;
 padding: 20px 0;

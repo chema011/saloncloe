@@ -5,5 +5,13 @@ export const HeaderData = [
     img: Logo,
     class: 'Logo',
   },
-  { contenido: `Salón de fiestas Cloe`, class: 'titulo' },
+  {
+    contenido: `Salón de fiestas Cloe`,
+    class: 'titulo',
+  },
+  {
+    contenido:
+      'Ven y celebra cualquier tipo de fiesta con nosotros, local para celebraciones en Barcelona.',
+    class: 'secundario',
+  },
 ];

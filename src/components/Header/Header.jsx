@@ -23,7 +23,7 @@ const Header = () => {
                     <p className={item.class}>{item.contenido}</p>
                   </Bounce>
                 </div>
-                <div className="bounce">
+                <div className="bouncePhone">
                   <Bounce left>
                     <p className={item.class}>{item.contenido}</p>
                   </Bounce>

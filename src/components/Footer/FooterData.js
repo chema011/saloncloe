@@ -5,5 +5,4 @@ export const Img = {
   alt: 'Su browser No lo soporta o su internet esta muy lento',
 };
 
-export const descripcion =
-  'Ven y celebra cualquier tipo de fiesta con nosotros, local para celebraciones en Barcelona.';
+export const descripcion = 'Salón De Fiestas Cloe';

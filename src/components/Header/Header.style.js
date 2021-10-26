@@ -16,10 +16,6 @@ export const BoxContent = styled.div`
 
   .bounce {
     display: none;
-
-    &:last-child {
-      display: block !important;
-    }
   }
 
   .titulo {
@@ -29,6 +25,20 @@ export const BoxContent = styled.div`
     font-weight: 700;
     font-size: 30px;
     text-shadow: 2px 2px 10px pink;
+
+    & span {
+      margin-left: 0;
+    }
+  }
+
+  .secundario {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-shadow: 2px 2px 10px pink;
+    margin-top: 10px;
+    line-height: 30px;
 
     & span {
       margin-left: 0;
@@ -46,17 +56,32 @@ export const BoxContent = styled.div`
       font-size: 50px;
     }
 
+    .secundario {
+      font-size: 14px;
+    }
+
     .bounce {
       display: block;
-      &:last-child {
-        display: none !important;
-      }
+    }
+
+    .bouncePhone {
+      display: none;
     }
   }
 
   @media ${device.laptop} {
     .titulo {
       font-size: 80px;
+    }
+
+    .secundario {
+      font-size: 16px;
+    }
+  }
+
+  @media ${device.laptopL} {
+    .secundario {
+      font-size:20px;
     }
   }
 `;
