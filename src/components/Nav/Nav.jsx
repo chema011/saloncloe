@@ -8,7 +8,7 @@ import { IconContext } from 'react-icons';
 //Animaciones
 import Fade from 'react-reveal/Fade';
 
-//Data
+//Datos
 import { NavData } from './NavData.js';
 
 //Componentes

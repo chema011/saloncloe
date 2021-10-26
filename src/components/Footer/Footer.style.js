@@ -24,7 +24,6 @@ img {
 p {
   color: ${(props) => props.theme.secondary};
   text-align: center;
-  width: 100%;
 }
 
 svg {
@@ -32,7 +31,7 @@ svg {
 }
 
 @media ${device.tablet} {
-  align-items: center;
+align-items: center;
 justify-content:center;
 flex-direction: row;
 padding: 20px 0;

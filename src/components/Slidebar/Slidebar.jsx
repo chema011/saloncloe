@@ -6,7 +6,7 @@ import * as AiIcons from 'react-icons/ai';
 
 import { IconContext } from 'react-icons';
 
-// DATA FILE
+// Datos
 import { SidebarData } from './SlidebarData';
 
 // Rutas
