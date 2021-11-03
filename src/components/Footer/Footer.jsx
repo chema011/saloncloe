@@ -14,7 +14,7 @@ const Footer = () => {
     <Styled.Footer>
       <Styled.Box>
         <img src={Img.logo} alt={Img.alt} />
-        <p>{descripcion}</p>
+        <h1>{descripcion}</h1>
         <RedesSociales />
       </Styled.Box>
     </Styled.Footer>

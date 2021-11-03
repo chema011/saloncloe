@@ -9,6 +9,7 @@ export const BoxContent = styled.div`
   text-align: center;
   color: ${(props) => props.theme.primary};
   overflow: hidden;
+  padding: 0 30px;
 
   .Logo {
     height: 200px;
@@ -23,7 +24,7 @@ export const BoxContent = styled.div`
       sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: 2px 2px 10px pink;
 
     & span {
@@ -39,6 +40,7 @@ export const BoxContent = styled.div`
     text-shadow: 2px 2px 10px pink;
     margin-top: 10px;
     line-height: 30px;
+    font-size: 12px;
 
     & span {
       margin-left: 0;
@@ -81,7 +83,7 @@ export const BoxContent = styled.div`
 
   @media ${device.laptopL} {
     .secundario {
-      font-size:20px;
+      font-size: 20px;
     }
   }
 `;

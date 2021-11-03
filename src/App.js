@@ -10,6 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // Estilos
 import './css/app.css';
 import SliderImg from './components/Slider/SliderImg.jsx';
+import Local from './components/Local/Local.jsx';
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
 
           {/* Carusel */}
           <SliderImg />
+
+          {/*Local */}
+          <Local />
 
           {/* Mapa */}
           <Map />
