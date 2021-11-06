@@ -11,7 +11,7 @@ export const HeaderData = [
   },
   {
     contenido:
-      '',
+      'Ven y celebra cualquier tipo de fiesta con nosotros, local para celebraciones en Barcelona.',
     class: 'secundario',
   },
 ];
