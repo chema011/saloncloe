@@ -6,7 +6,7 @@ export const HeaderData = [
     class: 'Logo',
   },
   {
-    contenido: `e`,
+    contenido: `Salón de fiestas Cloe`,
     class: 'titulo',
   },
   {
