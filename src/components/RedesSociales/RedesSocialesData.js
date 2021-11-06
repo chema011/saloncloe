@@ -8,7 +8,7 @@ export const RedesSocialesDatos = [
   },
   {
     icon: <AiIcons.AiFillFacebook />,
-  },
+  }, - aqui va el facebook-
   {
     icon: <SiIcons.SiGmail />,
     link: "mailto:salondefiestascloe@gmail.com"
